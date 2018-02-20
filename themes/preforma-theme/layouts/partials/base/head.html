@@ -1,0 +1,26 @@
+<head>
+  {{ partial "base/meta.html" . }}
+  <title>{{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+  <link rel="stylesheet" type='text/css' href="css/_global-styles/main.css"/>
+  <link rel="stylesheet" type='text/css' href="css/components/header/header.css"/>
+  <link rel="stylesheet" type='text/css' href="css/components/footer/footer.css"/>
+  <link rel="stylesheet" type='text/css' href="css/components/mobile-menu/mobile-menu.css"/>
+  <link rel="stylesheet" type='text/css' href="css/components/top-button/top-button.css"/>
+  <link rel="stylesheet" type='text/css' href="css/components/content-background/content-background.css"/>
+
+  {{ if eq $.File.TranslationBaseName "_index" }}
+    {{ partial "base/css-start.html" . }}
+  {{ else if eq $.File.TranslationBaseName "terapi" }}
+    {{ partial "base/css-terapi.html" . }}
+  {{ else if eq $.File.TranslationBaseName "om-kim" }}
+    {{ partial "base/css-om-kim.html" . }}
+  {{ else if eq $.File.TranslationBaseName "boka" }}
+    {{ partial "base/css-boka.html" . }}
+  {{ end }}
+
+  <link href="https://fonts.googleapis.com/css?family=Laila:300,500" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="{{ "favicon.png" | relURL }}" />
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" sizes="192x192" />
+</head>

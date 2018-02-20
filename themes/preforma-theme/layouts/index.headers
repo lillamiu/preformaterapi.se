@@ -1,0 +1,29 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: origin-when-cross-origin
+  Link: <{{ "css/_global-styles/main.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/header/header.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/footer/footer.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/mobile-menu/mobile-menu.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/top-button/top-button.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/content-background/content-background.css" | relURL }}>; rel=preload; as=style
+
+/index.html
+  Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
+
+/terapi.html
+  Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
+
+/om-kim.html
+  Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
+
+/boka.html
+  Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/blocks/contact-form-block/contact-form-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style

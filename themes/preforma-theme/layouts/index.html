@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="content-background background-1">
+    <section class="article-text-block">
+      <h1 style="text-align: center;">Välkommen</h1>
+      <p>En rad med lite text som behövs ändras.</p>
+    </section>
+    {{ partial "blocks/article-media-block.html" . }}
+    {{ partial "blocks/article-special-block.html" . }}
+    {{ partial "blocks/article-text-block.html" . }}
+
+    {{ partial "components/top-button.html" . }}
+  </div>
+{{ end }}
