@@ -4,8 +4,7 @@ description = "Start page of Preforma Samtalsterapi"
 type = "terapi"
 layout = "terapi"
 
-[menu]
-[main]
+[menu.main]
 name = "Terapi"
 identifier = "terapi"
 url = "/terapi/"

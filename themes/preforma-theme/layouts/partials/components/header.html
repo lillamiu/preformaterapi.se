@@ -1,8 +1,12 @@
 <header class="site-header">
   <nav class="menu">
     <ul>
-      <li><a class="menu__item active" href="/">Start</a></li>
-      <li><a class="menu__item" href="/">Terapi</a></li>
+      {{ $currentNode := . }}
+      {{ range first 2 .Site.Menus.main }}
+          <li>
+            <a class="menu__item {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+      {{ end }}
       <li>
         <a class="menu__item" href="/">
           <svg>
@@ -10,8 +14,11 @@
           </svg>
         </a>
       </li>
-      <li><a class="menu__item" href="/">Om Kim</a></li>
-      <li><a class="menu__item" href="/">Boka</a></li>
+      {{ range after 2 .Site.Menus.main }}
+          <li>
+            <a class="menu__item {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+      {{ end }}
     </ul>
   </nav>
   {{ partial "components/mobile-menu.html" . }}

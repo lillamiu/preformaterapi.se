@@ -4,8 +4,7 @@ description = "Information om mig, Kim, Samtalsterapeut."
 type = "om-kim"
 layout = "om-kim"
 
-[menu]
-[main]
+[menu.main]
 name = "Om Kim"
 identifier = "om-kim"
 url = "/om-kim/"

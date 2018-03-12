@@ -2,8 +2,7 @@
 title = "Start"
 description = "Start page of Preforma Samtalsterapi"
 
-[menu]
-[main]
+[menu.main]
 name = "Start"
 identifier = "home"
 url = "/"
