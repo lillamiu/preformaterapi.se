@@ -39,6 +39,9 @@ button {
   border: none;
   border-radius: 3px; }
 
+button::-moz-focus-inner {
+  border: 0; }
+
 button:focus {
   outline: 2px solid #1A95A2;
   outline-offset: 2px; }
