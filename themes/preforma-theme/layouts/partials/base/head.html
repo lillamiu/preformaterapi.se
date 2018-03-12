@@ -2,12 +2,12 @@
   {{ partial "base/meta.html" . }}
   <title>{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Site.BaseURL }}" />
-  <link rel="stylesheet" type='text/css' href="css/_global-styles/main.css"/>
-  <link rel="stylesheet" type='text/css' href="css/components/header/header.css"/>
-  <link rel="stylesheet" type='text/css' href="css/components/footer/footer.css"/>
-  <link rel="stylesheet" type='text/css' href="css/components/mobile-menu/mobile-menu.css"/>
-  <link rel="stylesheet" type='text/css' href="css/components/top-button/top-button.css"/>
-  <link rel="stylesheet" type='text/css' href="css/components/content-background/content-background.css"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/_global-styles/main.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/header/header.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/footer/footer.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/mobile-menu/mobile-menu.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/top-button/top-button.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/content-background/content-background.css" | absURL }}"/>
 
   {{ if eq $.File.TranslationBaseName "_index" }}
     {{ partial "base/css-start.html" . }}

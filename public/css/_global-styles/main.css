@@ -133,22 +133,6 @@ h3 {
     h3 {
       font-size: 2.4rem; } }
 
-h4 {
-  /*section sub heading label*/
-  font-family: 'Laila', serif;
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: #4E4361; }
-  @media screen and (min-width: 0px) {
-    h4 {
-      font-size: 1.4rem; } }
-  @media screen and (min-width: 480px) {
-    h4 {
-      font-size: 1.6rem; } }
-  @media screen and (min-width: 840px) {
-    h4 {
-      font-size: 1.8rem; } }
-
 /*--------EMPHASIS--------*/
 strong {
   font-family: 'Laila', serif;
@@ -178,9 +162,6 @@ a {
   font-weight: 500;
   color: #4E4361;
   font-size: inherit; }
-  a:focus {
-    outline: 2px solid #1A95A2;
-    outline-offset: 2px; }
 
 /*--------FOOTER--------*/
 footer {
@@ -193,15 +174,6 @@ label {
   font-family: 'Laila', serif;
   font-weight: 500;
   font-size: 1.8rem; }
-  @media screen and (min-width: 0px) {
-    label {
-      font-size: 1.4rem; } }
-  @media screen and (min-width: 480px) {
-    label {
-      font-size: 1.6rem; } }
-  @media screen and (min-width: 840px) {
-    label {
-      font-size: 1.8rem; } }
 
 input::placeholder {
   color: inherit;
@@ -221,25 +193,22 @@ nav a {
   nav a:visited {
     color: inherit; }
 
+.table-of-contents__item {
+  font-family: 'Laila', serif;
+  font-size: 1.8rem;
+  color: #1A95A2; }
+
 body {
   min-height: 100vh;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   @media screen and (min-width: 0px) {
-    body, body #top {
+    body {
       padding-top: 9.6rem; } }
   @media screen and (min-width: 480px) {
-    body, body #top {
+    body {
       padding-top: 9.6rem; } }
   @media screen and (min-width: 840px) {
-    body, body #top {
+    body {
       padding-top: 19.2rem; } }
-
-.no-scroll {
-  overflow: hidden; }
-
-#top {
-  position: absolute;
-  top: 0; }

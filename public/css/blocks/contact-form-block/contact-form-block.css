@@ -29,8 +29,7 @@ input, textarea {
   border-radius: 3px; }
 
 input:focus, textarea:focus {
-  border: 1px solid #1A95A2;
-  outline: 1px solid #1A95A2; }
+  outline: 1px solid rgba(0, 0, 0, 0.25); }
 
 button {
   color: #FCFBFA;
@@ -39,13 +38,9 @@ button {
   border: none;
   border-radius: 3px; }
 
-button:focus {
-  outline: 2px solid #1A95A2;
-  outline-offset: 2px; }
-
-button:hover {
+button:focus, button:hover {
   outline: none; }
-  button:hover::before {
+  button:focus::before, button:hover::before {
     position: absolute;
     content: "";
     display: block;

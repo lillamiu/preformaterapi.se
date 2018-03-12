@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "http://localhost:1313"
+languageCode = "sv"
 title = "My New Hugo Site"
 theme = "preforma-theme"
 

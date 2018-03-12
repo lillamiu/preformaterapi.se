@@ -2,6 +2,7 @@
 title = "Start"
 description = "Start page of Preforma Samtalsterapi"
 type = "terapi"
+layout = "terapi"
 
 [menu]
 [main]
