@@ -1,7 +1,5 @@
 <div class="article-media-block">
-  <div class="media-container">
-    <div class="video-wrapper">
-      <iframe title="Introduktionsvideo" src="https://www.youtube-nocookie.com/embed/LNyJ96w7A7U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
+    {{ with .Params.media }}
+      {{ . | safeHTML }}
+    {{ end }}
 </div>
