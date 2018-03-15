@@ -14,21 +14,15 @@
   <ul role="menu" class="mobile-menu__list background-1">
     <li>
       <a href="">
-        <div class="logo"></div>
+        <div class="logo "></div>
       </a>
     </li>
-    <li class="mobile-menu__item active">
-      <a role="menuitem" href="" class="mobile-menu__link">Start</a>
-    </li>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
     <li class="mobile-menu__item">
-      <a role="menuitem" href="" class="mobile-menu__link">Terapi</a>
+      <a role="menuitem" href="{{ .URL }}" class="mobile-menu__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}">{{ .Name }}</a>
     </li>
-    <li class="mobile-menu__item">
-      <a role="menuitem" href="" class="mobile-menu__link">Om Kim</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a role="menuitem" href="" class="mobile-menu__link">Boka</a>
-    </li>
+    {{ end }}
   </ul>
 </nav>
 <script>

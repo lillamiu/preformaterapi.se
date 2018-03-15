@@ -208,12 +208,12 @@ input::placeholder {
   opacity: 0.5; }
 
 /*--------NAVIGATION--------*/
-.menu__item, .mobile-menu__item {
+.menu__item, .mobile-menu__link {
   font-family: 'League Spartan', sans-serif;
   font-size: 1.8rem;
   color: #4E4361;
   text-transform: uppercase; }
-  .menu__item.active, .mobile-menu__item.active {
+  .menu__item.active, .mobile-menu__link.active {
     color: #F24677; }
 
 nav a {
