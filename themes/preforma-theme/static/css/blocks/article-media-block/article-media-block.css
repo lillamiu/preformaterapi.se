@@ -70,10 +70,13 @@
     height: 32rem; }
     @media screen and (min-width: 0px) {
       .article-media-block .profile-image {
-        width: 20rem; } }
+        width: 20rem;
+        height: 20rem; } }
     @media screen and (min-width: 480px) {
       .article-media-block .profile-image {
-        width: 26rem; } }
+        width: 26rem;
+        height: 26rem; } }
     @media screen and (min-width: 840px) {
       .article-media-block .profile-image {
-        width: 32rem; } }
+        width: 32rem;
+        height: 32rem;} }
