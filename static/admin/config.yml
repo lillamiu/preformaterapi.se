@@ -13,7 +13,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
-    folder: "home" # The path to the folder where the documents are stored
+    folder: "content/home" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     slug: "_index" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
