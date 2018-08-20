@@ -60,22 +60,22 @@ html {
 .background-1 {
   background-color: #E4EEF0; }
   .background-1 .bg-logo {
-    fill: #E4EEF0; }
+    background-color: #E4EEF0; }
 
 .background-2 {
   background-color: #F5EDE9; }
   .background-2 .bg-logo {
-    fill: #F5EDE9; }
+    background-color: #F5EDE9; }
 
 .background-3 {
   background-color: #E9F0EC; }
   .background-3 .bg-logo {
-    fill: #E9F0EC; }
+    background-color: #E9F0EC; }
 
 .background-4 {
   background-color: #FAF2E3; }
   .background-4 .bg-logo {
-    fill: #FAF2E3; }
+    background-color: #FAF2E3; }
 
 @font-face {
   font-family: 'League Spartan';
@@ -182,11 +182,44 @@ a {
     outline: 2px solid #1A95A2;
     outline-offset: 2px; }
 
+blockquote {
+  padding-left: 4.8rem; }
+  @media screen and (min-width: 0px) {
+    blockquote {
+      padding-left: 2.4rem; } }
+  @media screen and (min-width: 480px) {
+    blockquote {
+      padding-left: 3.2rem; } }
+  @media screen and (min-width: 840px) {
+    blockquote {
+      padding-left: 4.8rem; } }
+  blockquote p {
+    font-weight: 500;
+    line-height: 1.8; }
+    @media screen and (min-width: 0px) {
+      blockquote p {
+        font-size: 1.6rem; } }
+    @media screen and (min-width: 480px) {
+      blockquote p {
+        font-size: 1.8rem; } }
+    @media screen and (min-width: 840px) {
+      blockquote p {
+        font-size: 2.0rem; } }
+
 /*--------FOOTER--------*/
 footer {
   font-family: 'Laila', serif;
   font-weight: 300;
-  font-size: 1.4rem; }
+  font-size: 1.8rem; }
+  @media screen and (min-width: 0px) {
+    footer {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 480px) {
+    footer {
+      font-size: 1.6rem; } }
+  @media screen and (min-width: 840px) {
+    footer {
+      font-size: 1.8rem; } }
 
 /*---------CONTACT FORM----------*/
 label {

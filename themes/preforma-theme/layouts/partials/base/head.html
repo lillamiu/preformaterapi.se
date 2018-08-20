@@ -3,19 +3,20 @@
   <title>{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Site.BaseURL }}" />
   <link rel="stylesheet" type='text/css' href="{{ "css/_global-styles/main.css" | absURL }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ "css/components/bg-logo/bg-logo.css" | absURL }}"/>
   <link rel="stylesheet" type='text/css' href="{{ "css/components/header/header.css" | absURL }}"/>
   <link rel="stylesheet" type='text/css' href="{{ "css/components/footer/footer.css" | absURL }}"/>
   <link rel="stylesheet" type='text/css' href="{{ "css/components/mobile-menu/mobile-menu.css" | absURL }}"/>
   <link rel="stylesheet" type='text/css' href="{{ "css/components/top-button/top-button.css" | absURL }}"/>
   <link rel="stylesheet" type='text/css' href="{{ "css/components/content-background/content-background.css" | absURL }}"/>
 
-  {{ if eq $.File.TranslationBaseName "_index" }}
+  {{ if eq $.Page.Type "home" }}
     {{ partial "base/css-start.html" . }}
-  {{ else if eq $.File.TranslationBaseName "terapi" }}
+  {{ else if eq $.Page.Type "terapi" }}
     {{ partial "base/css-terapi.html" . }}
-  {{ else if eq $.File.TranslationBaseName "om-kim" }}
+  {{ else if eq $.Page.Type "om-kim" }}
     {{ partial "base/css-om-kim.html" . }}
-  {{ else if eq $.File.TranslationBaseName "boka" }}
+  {{ else if eq $.Page.Type "boka" }}
     {{ partial "base/css-boka.html" . }}
   {{ end }}
 
@@ -23,4 +24,5 @@
 
   <link rel="apple-touch-icon" href="{{ "favicon.png" | relURL }}" />
   <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" sizes="192x192" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

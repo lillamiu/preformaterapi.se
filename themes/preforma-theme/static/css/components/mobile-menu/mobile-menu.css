@@ -5,22 +5,22 @@
 .background-1 {
   background-color: #E4EEF0; }
   .background-1 .bg-logo {
-    fill: #E4EEF0; }
+    background-color: #E4EEF0; }
 
 .background-2 {
   background-color: #F5EDE9; }
   .background-2 .bg-logo {
-    fill: #F5EDE9; }
+    background-color: #F5EDE9; }
 
 .background-3 {
   background-color: #E9F0EC; }
   .background-3 .bg-logo {
-    fill: #E9F0EC; }
+    background-color: #E9F0EC; }
 
 .background-4 {
   background-color: #FAF2E3; }
   .background-4 .bg-logo {
-    fill: #FAF2E3; }
+    background-color: #FAF2E3; }
 
 .mobile-header {
   position: relative;

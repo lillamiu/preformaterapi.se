@@ -1,11 +1,11 @@
 {{ define "main" }}
   <main class="content-background background-2">
+    {{ partial "components/bg-logo.html" . }}
     {{ partial "blocks/article-special-block.html" . }}
-    {{ partial "blocks/article-text-block.html" . }}
-    {{ partial "blocks/article-text-block.html" . }}
-    {{ partial "blocks/article-text-block.html" . }}
-    {{ partial "blocks/article-text-block.html" . }}
-    {{ partial "blocks/article-text-block.html" . }}
+
+    {{ range .Data.Pages }}
+        {{ partial "blocks/article-text-block.html" . }}
+    {{ end }}
 
     {{ partial "components/top-button.html" . }}
   </main>

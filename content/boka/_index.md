@@ -4,9 +4,4 @@ description = "Information för att boka tid hos mig, samtalsterapeut göteborg.
 type = "boka"
 layout = "boka"
 
-[menu.main]
-name = "Boka"
-identifier = "boka"
-url = "/boka/"
-weight = 40
 +++

@@ -4,6 +4,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: origin-when-cross-origin
   Link: <{{ "css/_global-styles/main.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/components/bg-logo/bg-logo.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/components/header/header.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/components/footer/footer.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/components/mobile-menu/mobile-menu.css" | relURL }}>; rel=preload; as=style
@@ -15,15 +16,15 @@
   Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
 
-/terapi.html
+/terapi/index.html
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
 
-/om-kim.html
+/om-kim/index.html
   Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
 
-/boka.html
+/boka/index.html
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/contact-form-block/contact-form-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style
