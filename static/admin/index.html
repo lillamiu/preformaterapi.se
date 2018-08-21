@@ -36,19 +36,18 @@
 		    	h('div', {"className": "bg-logo"}),
 		    	h('section', {"className": "article-text-block"},
 		      	h('h1', {"style":" text-align: center;"}, "Välkommen"),
-		      	h('p', {}, this.props.welcomeText),
+		      	h('p', {}, this.props.welcomeText)
 		    	),
 		    	h('div',{"className": "article-media-block"}, this.props.media),
 		    	h('section', {"className": "article-special-block"},
-		    		h('header' {}, 
+		    		h('header', {},
 		    			h('h2', {}, "Aktuellt")
 		    		),
 		    		h('div', {"className" : "article-special-block__content"},
 		    			h('h4', {}, this.props.announcementDate),
 		    			h('p', {}, this.props.announcementText)
-		    		),
+		    		)
 		    	),
-		      h('img', {src: bg.toString()}),
 		      h('div', {"className": "text"}, this.props.widgetFor('body'))
 		    );
 		  }
