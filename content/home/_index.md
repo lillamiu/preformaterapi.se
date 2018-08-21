@@ -6,4 +6,5 @@ layout = "home"
 
 welcomeText = "Jag heter Kim och är samtalsterapeut i Göteborg..."
 announcementText = "Just nu sker min terapiverksamhet endast på onsdagar under kvällstid och från hösten även under dagtid på tisdagar."
+announcementDate = "21 Aug 2018"
 +++
