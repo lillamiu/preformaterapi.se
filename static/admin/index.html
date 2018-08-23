@@ -29,6 +29,7 @@
 		var HomePreview = createClass({
 		  render: function() {
 		  	var entry = this.props.entry;
+		  	var date = entry.getIn(['data','announcementDate']);
 
 		    return h('main', {"className": "content-background background-1"},
 		    	h('div', {"className": "bg-logo"}),
@@ -42,7 +43,7 @@
 		    			h('h2', {}, "Aktuellt")
 		    		),
 		    		h('div', {"className" : "article-special-block__content"},
-		    			h('h4', {}, entry.getIn(['data','announcementDate']).toLocaleDateString('sv-SE', {day: 'numeric', month: 'long', year: 'numeric'})),
+		    			h('h4', {}, date.toLocaleDateString('sv-SE', {day: 'numeric', month: 'long', year: 'numeric'})),
 		    			h('p', {}, entry.getIn(['data','announcementText']))
 		    		)
 		    	)
