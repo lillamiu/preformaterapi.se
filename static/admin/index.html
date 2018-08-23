@@ -34,16 +34,16 @@
 		    	h('div', {"className": "bg-logo"}),
 		    	h('section', {"className": "article-text-block"},
 		      	h('h1', {"style": {"textAlign":"center"}}, "Välkommen"),
-		      	h('p', {}, entry.welcomeText)
+		      	h('p', {}, entry.getIn(['data','welcomeText']))
 		    	),
-		    	h('div',{"className": "article-media-block"}, entry.media),
+		    	h('div',{"className": "article-media-block"}, entry.getIn(['data','media'])),
 		    	h('section', {"className": "article-special-block"},
 		    		h('header', {},
 		    			h('h2', {}, "Aktuellt")
 		    		),
 		    		h('div', {"className" : "article-special-block__content"},
-		    			h('h4', {}, entry.announcementDate),
-		    			h('p', {}, entry.announcementText)
+		    			h('h4', {}, entry.getIn(['data','announcementDate'])),
+		    			h('p', {}, entry.getIn(['data','announcementText']))
 		    		)
 		    	)
 		    );
