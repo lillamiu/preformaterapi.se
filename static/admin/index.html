@@ -28,24 +28,22 @@
 
 		var HomePreview = createClass({
 		  render: function() {
-		    var entry = this.props.entry;
-		    var image = entry.getIn(['data', 'image']);
-		    var bg = this.props.getAsset(image);
+		  	var entry = this.props.entry;
 
 		    return h('main', {"className": "content-background background-1"},
 		    	h('div', {"className": "bg-logo"}),
 		    	h('section', {"className": "article-text-block"},
 		      	h('h1', {"style": {"textAlign":"center"}}, "Välkommen"),
-		      	h('p', {}, this.props.welcomeText)
+		      	h('p', {}, entry.welcomeText)
 		    	),
-		    	h('div',{"className": "article-media-block"}, this.props.media),
+		    	h('div',{"className": "article-media-block"}, entry.media),
 		    	h('section', {"className": "article-special-block"},
 		    		h('header', {},
 		    			h('h2', {}, "Aktuellt")
 		    		),
 		    		h('div', {"className" : "article-special-block__content"},
-		    			h('h4', {}, this.props.announcementDate),
-		    			h('p', {}, this.props.announcementText)
+		    			h('h4', {}, entry.announcementDate),
+		    			h('p', {}, entry.announcementText)
 		    		)
 		    	)
 		    );
