@@ -42,7 +42,7 @@
 		    			h('h2', {}, "Aktuellt")
 		    		),
 		    		h('div', {"className" : "article-special-block__content"},
-		    			h('h4', {}, entry.getIn(['data','announcementDate'])),
+		    			h('h4', {}, entry.getIn(['data','announcementDate']).toString()),
 		    			h('p', {}, entry.getIn(['data','announcementText']))
 		    		)
 		    	)
