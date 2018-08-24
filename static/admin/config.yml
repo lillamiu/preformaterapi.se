@@ -28,7 +28,6 @@ collections:
     label: "Reflektioner"
     folder: "content/home/reflections"
     create: true
-    slug: ""
     fields:
       - {label: "Person (Kön, ålder)", name: "person", widget: "string"}
       - {label: "Reflektion", name: "quote", widget: "string"}
