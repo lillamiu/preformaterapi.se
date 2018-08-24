@@ -50,7 +50,26 @@
 		    );
 		  }
 		});
+		var ReflectionsPreview = createClass({
+		  render: function() {
+		  	var entry = this.props.entry;
+
+		    return h('main', {"className": "content-background background-1"},
+		    	h('div', {"className": "bg-logo"}),
+		    	h('section', {"className": "article-text-block"},
+		    		h('header', {},
+		    			h('h2', {}, "Reflektioner")
+		    		),
+		    		h('div', {},
+		    			h('h3', {}, ),
+		    			h('p', {}, )
+		    		)
+		    	)
+		    );
+		  }
+		});
 		CMS.registerPreviewTemplate("home", HomePreview);
+		CMS.registerPreviewTemplate("reflections", ReflectionsPreview);
 
 	</script>
 </body>
