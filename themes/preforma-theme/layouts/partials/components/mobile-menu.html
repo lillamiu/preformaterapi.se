@@ -20,7 +20,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <li class="mobile-menu__item">
-      <a role="menuitem" href="{{ .URL }}" class="mobile-menu__link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}">{{ .Name }}</a>
+      <a role="menuitem" href="{{ .URL | absLangURL }}" class="mobile-menu__link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}">{{ .Name }}</a>
     </li>
     {{ end }}
   </ul>
