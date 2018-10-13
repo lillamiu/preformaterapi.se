@@ -1,22 +1,22 @@
 <header class="site-header">
   <nav class="menu">
     <ul>
-      {{ $currentNode := . }}
+      {{ $currentPage := . }}
       {{ range first 2 .Site.Menus.main }}
           <li>
-            <a class="menu__item {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="menu__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
           </li>
       {{ end }}
       <li>
         <a class="menu__item" href="/">
           <svg>
-            <!-- TODO accessibility --> 
+            <!-- TODO accessibility -->
           </svg>
         </a>
       </li>
       {{ range after 2 .Site.Menus.main }}
           <li>
-            <a class="menu__item {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="menu__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
           </li>
       {{ end }}
     </ul>
