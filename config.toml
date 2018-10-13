@@ -22,7 +22,7 @@ notAlternative = true
 [[menu.main]]
   name = "Start"
   identifier = "home"
-  url = "/"
+  url = "/home/"
   weight = 1
 
 [[menu.main]]
