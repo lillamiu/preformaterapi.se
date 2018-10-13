@@ -20,9 +20,9 @@ notAlternative = true
 
 [menu]
 [[menu.main]]
-  name = "Start"
+  name = "Home"
   identifier = "home"
-  url = "/home/"
+  url = "/"
   weight = 1
 
 [[menu.main]]
