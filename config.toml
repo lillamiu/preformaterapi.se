@@ -1,4 +1,4 @@
-baseURL = "https://nervous-sinoussi-e114f9.netlify.com/"
+baseURL = "https://nervous-sinoussi-e114f9.netlify.com"
 languageCode = "sv"
 title = "Preforma Samtalsterapi"
 theme = "preforma-theme"
@@ -28,17 +28,17 @@ notAlternative = true
 [[menu.main]]
   name = "Terapi"
   identifier = "terapi"
-  url = "/terapi"
+  url = "/terapi/"
   weight = 2
 
 [[menu.main]]
   name = "Om Kim"
   identifier = "om-kim"
-  url = "/om-kim"
+  url = "/om-kim/"
   weight = 3
 
 [[menu.main]]
   name = "Boka"
   identifier = "boka"
-  url = "/boka"
+  url = "/boka/"
   weight = 4
