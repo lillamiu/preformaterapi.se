@@ -1,5 +1,6 @@
 ---
 layout: home
+type: home
 title: Start
 description: Start page of Preforma Samtalsterapi
 welcomeText: Jag heter Kim och är samtalsterapeut i Göteborg...
