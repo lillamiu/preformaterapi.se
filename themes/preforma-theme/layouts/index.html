@@ -7,9 +7,6 @@
     </section>
     {{ partial "blocks/article-media-block.html" . }}
     {{ partial "blocks/article-special-block.html" . }}
-    {{ range .Data.Pages }}
-        {{ partial "blocks/article-text-block.html" . }}
-    {{ end }}
 
     {{ partial "components/top-button.html" . }}
   </main>
