@@ -50,6 +50,18 @@
 		    );
 		  }
 		});
+
+		//TODO need to fix the code here
+		var ReflectionsControl = createClass({
+		  handleChange: function(e) {
+		    this.props.onChange(e.target.value.split(',').map((e) => e.trim()));
+		  },
+
+		  render: function() {
+		    var value = this.props.value;
+		    return h('input', { type: 'text', value: value ? value.join(', ') : '', onChange: this.handleChange });
+		  }
+		});
 		var ReflectionsPreview = createClass({
 		  render: function() {
 		  	var entry = this.props.entry;
@@ -61,8 +73,8 @@
 		    			h('h2', {}, "Reflektioner")
 		    		),
 		    		h('div', {},
-		    			h('h3', {}, ),
-		    			h('p', {}, )
+		    			h('h3', {}, entry.getIn(['data','person'])),
+		    			h('p', {}, entry.getIn(['data','quote']))
 		    		)
 		    	)
 		    );
