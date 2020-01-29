@@ -255,6 +255,9 @@ nav a {
     color: inherit; }
 
 body {
+  font-size: 1.8rem;
+  font-family: 'Laila', serif;
+  font-weight: 300;
   min-height: 100vh;
   overflow: auto;
   display: flex;
