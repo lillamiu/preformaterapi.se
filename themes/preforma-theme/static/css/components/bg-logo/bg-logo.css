@@ -1,5 +1,6 @@
 .bg-logo {
   position: fixed;
+  pointer-events: none;
   mix-blend-mode: multiply;
   opacity: 0.6;
   mask-image: url(/vectors/lady-release.svg);
