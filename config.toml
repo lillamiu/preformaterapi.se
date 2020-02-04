@@ -3,11 +3,11 @@ languageCode = "sv"
 title = "Preforma Samtalsterapi"
 theme = "preforma-theme"
 
-[[headers]]
+# [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+  # for = "/*"
+    # [headers.values]
+    # Access-Control-Allow-Origin = "*"
 
 [outputs]
 home = [ "HTML", "RSS", "HEADERS" ]
