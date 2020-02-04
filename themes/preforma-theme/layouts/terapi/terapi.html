@@ -1,7 +1,6 @@
 {{ define "main" }}
   <main class="content-background background-2">
     {{ partial "components/bg-logo.html" . }}
-    {{ partial "blocks/article-special-block.html" . }}
 
     {{ range .Data.Pages }}
         {{ partial "blocks/article-text-block.html" . }}
