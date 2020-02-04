@@ -1,4 +1,4 @@
-baseURL = "https://nervous-sinoussi-e114f9.netlify.com/"
+baseURL = "https://preforma.netlify.com/"
 languageCode = "sv"
 title = "Preforma Samtalsterapi"
 theme = "preforma-theme"
