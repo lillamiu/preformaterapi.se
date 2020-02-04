@@ -47,3 +47,36 @@
     @media screen and (min-width: 840px) {
       .article-special-block__content {
         padding: 4.8rem 3.2rem 4.8rem 3.2rem; } }
+
+/*
+  AUTO GRID
+  Set the minimum item size with `--auto-grid-min-size` and you'll
+  get a fully responsive grid with no media queries.
+*/
+.auto-grid {
+  --auto-grid-min-size: 32rem;
+}
+
+.auto-grid > * {
+  max-width: 40rem;
+}
+
+.auto-grid > * + * {
+  margin-top: 1.6rem;
+}
+
+@supports(display: grid) {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1.6rem;
+  }
+
+  .auto-grid > * {
+    max-width: unset;
+  }
+
+  .auto-grid > * + * {
+    margin-top: unset;
+  }
+}
