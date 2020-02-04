@@ -16,15 +16,15 @@
   Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
 
-/terapi/index.html
+/terapi/terapi.html
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
 
-/om-kim/index.html
+/om-kim/om-kim.html
   Link: <{{ "css/blocks/article-media-block/article-media-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
 
-/boka/index.html
+/boka/boka.html
   Link: <{{ "css/blocks/article-text-block/article-text-block.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/article-special-block/article-special-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "css/blocks/contact-form-block/contact-form-block.css" | relURL }}>; rel=preload; as=style: <{{ "css/components/logo/logo.css" | relURL }}>; rel=preload; as=style
