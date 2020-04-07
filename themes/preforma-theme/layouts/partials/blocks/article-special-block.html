@@ -3,9 +3,9 @@
     <h2>Aktuellt</h2>
   </header>
   <div class="article-special-block__content">
-    <h4>11 februari 2020</h4>
+    <h4>{{ .Params.announcementDate.Format "2006-01-02" }}</h4>
     <p>
-      För tillfället finns tider måndag förmiddagar samt fredag eftermiddagar.
+      {{ .Params.announcementText }}
     </p>
   </div>
 </section>

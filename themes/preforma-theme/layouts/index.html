@@ -2,8 +2,8 @@
   <main class="content-background background-1">
     {{ partial "components/bg-logo.html" . }}
     <section class="article-text-block">
-      <h1 style="text-align: center;">Välkommen till Preforma Samtalsterapi!</h1>
-      <p>{{ .Params.welcomeText }}</p>
+      <h1 style="text-align: center;">Välkommen!</h1>
+      {{ .Content }}
     </section>
     {{ partial "blocks/article-media-block.html" . }}
     {{ partial "blocks/article-special-block.html" . }}

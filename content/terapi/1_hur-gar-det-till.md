@@ -2,17 +2,9 @@
 sectionTitle = "Hur går det till?"
 +++
 ### Första mötet 
-Vi träffas en första gång och bestämmer sedan om vi anser att det finns bra förutsättningar och en ömsesidig vilja att fortsätta arbeta tillsammans. Här beslutar vi också om det är **kortare coachning** mot ett speciellt mål eller mer **långsiktig terapi** som vi ska arbeta med.
+Vi träffas en första gång och bestämmer sedan om vi anser att det finns bra förutsättningar och en ömsesidig vilja att fortsätta arbeta tillsammans. Här beslutar vi också om det är **kortare coachning** mot ett speciellt mål eller mer **djupgående terapi** som vi ska arbeta med.
 
 ### Så fortsätter vi 
-Därefter träffas vi regelbundet och så ofta vi kommer överens om. Vanligtvis träffar jag mina klienter i terapi 1 gång per vecka, alternativt 1 gång var 14 dag men andra intervall förekommer också. behöver Oavsett **coachning** eller **terapi** så behöver resultaten av våra möten bearbetas och en del behöver längre och andra kortare tid för detta.
+Därefter träffas vi regelbundet och så ofta vi kommer överens om. Vanligtvis träffar jag mina klienter i terapi 1 gång per vecka, alternativt 1 gång var 14 dag men andra intervall förekommer också. Oavsett **coachning** eller **terapi** så behöver resultaten av våra möten bearbetas och en del behöver längre och andra kortare tid för detta.
 
-Mitt mål som Din samtalsterapeut är att det som ligger fördolt och som Du behöver arbeta med kommer upp i ljuset för att Du ska kunna komma vidare i livet och må bättre i Dig själv. Det finns inga genvägar, terapiarbete tar sin tid och för mig är det viktigt att vi arbetar i en takt som känns respektfullt och bra för Dig.
-
-### Andra verktyg jag använder
- Förutom samtalet kan jag ibland använda andra verktyg i terapiarbetet som
-
-  * avspänningsövningar 
-  * visualiseringsövningar 
-  * måleri 
-  * enklare dramaövningar
+Mitt mål med **samtalsterapi** är att det som ligger fördolt och som Du behöver arbeta med kommer upp i ljuset för att Du ska kunna komma vidare i livet och må bättre i Dig själv. Det finns inga genvägar, terapiarbete tar sin tid och för mig är det viktigt att vi arbetar i en takt som känns respektfullt och bra för Dig.
