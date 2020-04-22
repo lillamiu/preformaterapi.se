@@ -1,7 +1,7 @@
 <div class="mobile-header">
-
+  {{ $currentPage := . }}
   <div class="mobile-header__title">Preforma Samtalsterapi</div>
-  <div class="menu__item active">Active Page</div>
+  <div class="menu__item active">{{ .Name }}</div>
 
   <button class="burger" aria-haspopup="true" aria-controls="mobileMenu">
     <div class="burger__patty"></div>
@@ -17,7 +17,7 @@
         <img class="logo" src="/images/logo.png" alt="Preforma Terapi logo" width="175px">
       </a>
     </li>
-    {{ $currentPage := . }}
+
     {{ range .Site.Menus.main }}
     <li class="mobile-menu__item">
       <a role="menuitem" href="{{ .URL | absLangURL }}" class="mobile-menu__link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}">{{ .Name }}</a>
