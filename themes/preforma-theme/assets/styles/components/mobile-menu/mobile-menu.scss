@@ -118,6 +118,9 @@
 
   .logo {
     margin: 16px;
+    img {
+      width: fit-content;
+    }
   }
 
   &--active {
