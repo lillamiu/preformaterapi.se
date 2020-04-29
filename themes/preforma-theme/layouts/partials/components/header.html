@@ -1,24 +1,20 @@
 <header class="site-header">
-  <nav class="menu">
-    <ul>
-      {{ $currentPage := . }}
-      {{ range first 2 .Site.Menus.main }}
-          <li>
-            <a class="menu__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          </li>
-      {{ end }}
-      <li>
-        <a class="menu__item" href="/">
-          <img src="/images/logo.png" alt="Preforma Terapi logo" width="175px">
-        </a>
-      </li>
-      {{ range after 2 .Site.Menus.main }}
-          <li>
-            <a class="menu__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          </li>
-      {{ end }}
-    </ul>
-  </nav>
+  <div class="content">
+    <a class="logo" href="/">
+      <img id="logo-full" src="/vectors/logo-horizontal.svg" alt="Preforma Terapi logo">
+      <img id="logo-small" src="/vectors/logo.svg" alt="Preforma Terapi logo">
+    </a>
+    <nav class="menu">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li>
+          <a class="menu__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
   {{ partial "components/mobile-menu.html" . }}
 </header>
 <script>

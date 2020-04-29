@@ -8,17 +8,25 @@
 .mobile-header {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  > * {
+    margin-right: 2.4rem;
+  }
+  > :last-child {
+    margin-right: 0;
+  }
 
   @include phone {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
+    //margin-left: 1.6rem;
+    //margin-right: 1.6rem;
   }
 
   @include tablet {
-    margin-left: 2.4rem;
-    margin-right: 2.4rem;
+    display: none;
   }
 
   @include desktop {
@@ -45,11 +53,10 @@
 .burger {
   background-color: transparent;
   border: none;
-  padding: 13px 6px 13px 6px;
+  padding: 10px 6px 10px 6px;
   position: absolute;
   z-index: 20;
   right: 0;
-  bottom: 0;
   cursor: pointer;
   transform: rotateY(0);
   @include easeOut;
@@ -108,6 +115,10 @@
   width: 100%;
   visibility: hidden;
   overflow-y: scroll;
+
+  .logo {
+    margin: 16px;
+  }
 
   &--active {
     visibility: visible;
@@ -190,9 +201,4 @@
       transition-delay: $x * .1s;
     }
   }
-}
-
-// make the demo look nice, not required for your own use.
-.logo {
-  margin: 16px;
 }

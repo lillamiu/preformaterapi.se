@@ -1,6 +1,8 @@
 <div class="mobile-header">
   {{ $currentPage := . }}
-  <div class="mobile-header__title">Preforma Samtalsterapi</div>
+  <a class="logo" href="/">
+    <img src="/vectors/logo.svg" alt="Preforma Terapi logo" width="48px">
+  </a>
   <div class="menu__item active">{{ .Name }}</div>
 
   <button class="burger" aria-haspopup="true" aria-controls="mobileMenu">
@@ -13,8 +15,8 @@
 <nav id="mobileMenu" class="mobile-menu" role="navigation">
   <ul role="menu" class="mobile-menu__list background-1">
     <li>
-      <a href="">
-        <img class="logo" src="/images/logo.png" alt="Preforma Terapi logo" width="175px">
+      <a class="logo" href="/">
+        <img src="/vectors/logo-vertical.svg" alt="Preforma Terapi logo" width="160px">
       </a>
     </li>
 
