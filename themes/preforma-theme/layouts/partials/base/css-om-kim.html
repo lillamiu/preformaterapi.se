@@ -1,2 +1,4 @@
-<link rel="stylesheet" type='text/css' href="{{ "css/blocks/article-media-block/article-media-block.css" | absURL }}"/>
-<link rel="stylesheet" type='text/css' href="{{ "css/blocks/article-text-block/article-text-block.css" | absURL }}"/>
+{{ $mediaBlockCSS := resources.Get "styles/blocks/article-media-block/article-media-block.scss" | toCSS | minify | fingerprint }}
+{{ $textBlockCSS := resources.Get "styles/blocks/article-text-block/article-text-block.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" type='text/css' href="{{ $mediaBlockCSS.Permalink }}"/>
+<link rel="stylesheet" type='text/css' href="{{ $textBlockCSS.Permalink }}"/>

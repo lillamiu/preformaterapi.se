@@ -2,13 +2,20 @@
   {{ partial "base/meta.html" . }}
   <title>{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Site.BaseURL }}" />
-  <link rel="stylesheet" type='text/css' href="{{ "css/_global-styles/main.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/bg-logo/bg-logo.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/header/header.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/footer/footer.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/mobile-menu/mobile-menu.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/top-button/top-button.css" | absURL }}"/>
-  <link rel="stylesheet" type='text/css' href="{{ "css/components/content-background/content-background.css" | absURL }}"/>
+  {{ $mainCSS := resources.Get "styles/_global-styles/main.scss" | toCSS | minify | fingerprint }}
+  {{ $bgLogoCSS := resources.Get "styles/components/bg-logo/bg-logo.scss" | toCSS | minify | fingerprint }}
+  {{ $headerCSS := resources.Get "styles/components/header/header.scss" | toCSS | minify | fingerprint }}
+  {{ $footerCSS := resources.Get "styles/components/footer/footer.scss" | toCSS | minify | fingerprint }}
+  {{ $mobileMenuCSS := resources.Get "styles/components/mobile-menu/mobile-menu.scss" | toCSS | minify | fingerprint }}
+  {{ $topButtonCSS := resources.Get "styles/components/top-button/top-button.scss" | toCSS | minify | fingerprint }}
+  {{ $contentBackgroundCSS := resources.Get "styles/components/content-background/content-background.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" type='text/css' href="{{ $mainCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $bgLogoCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $headerCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $footerCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $mobileMenuCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $topButtonCSS.Permalink }}"/>
+  <link rel="stylesheet" type='text/css' href="{{ $contentBackgroundCSS.Permalink }}"/>
 
   {{ if eq $.Page.Type "home" }}
     {{ partial "base/css-start.html" . }}
@@ -21,7 +28,7 @@
   {{ end }}
 
   <link href="https://fonts.googleapis.com/css?family=Laila:300,500" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
 
   <link rel="apple-touch-icon" href="{{ "favicon.png" | relURL }}" />
   <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" sizes="192x192" />
