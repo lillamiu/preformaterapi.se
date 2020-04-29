@@ -1,0 +1,134 @@
+@import '../../_global-styles/mixins';
+@import '../../_global-styles/colors';
+
+.site-header {
+  background-color: $color--off-white;
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-bottom: 1.6rem;
+  min-height: 6.4rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  .logo img {
+    @include phone {
+      width: 4.8rem;
+    }
+
+    @include tablet {
+      width: 4.8rem;
+    }
+
+    @include desktop {
+      width: 27.2rem;
+    }
+  }
+
+  nav.menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    > li {
+      padding-right: 4.8rem;
+    }
+
+    > li:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include phone {
+    height: 9.6rem;
+
+    //hide menu
+    nav.menu {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    height: 9.6rem;
+
+    //hide hamburger
+    .burger {
+      display: none;
+    }
+    //show menu
+    nav.menu {
+      display: inline-block;
+    }
+  }
+
+  @include desktop {
+    height: 9.6rem;
+    
+    //hide hamburger
+    .burger {
+      display: none;
+    }
+
+    //show menu
+    nav.menu {
+      display: inline-block;
+    }
+  }
+
+  // Animation Classes
+  &.slideUp {
+    @include phone {
+      animation: slideUpPhone .5s forwards ease-out;
+    }
+    @include desktop {
+      animation: slideUpDesktop .5s forwards ease-out;
+    }
+  }
+
+  &.slideDown {
+    @include phone {
+      animation: slideDownPhone .3s forwards ease-out;
+    }
+    @include desktop {
+      animation: slideDownDesktop .3s forwards ease-out;
+    }
+  }
+
+  // Phone Animation Keyframes
+  @keyframes slideUpPhone {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-9.6rem);
+    }
+  }
+  @keyframes slideDownPhone {
+    0% {
+      transform: translateY(-9.6rem);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  // Phone Animation Keyframes
+  @keyframes slideUpDesktop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-9.6rem);
+    }
+  }
+  @keyframes slideDownDesktop {
+    0% {
+      transform: translateY(-9.6rem);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
