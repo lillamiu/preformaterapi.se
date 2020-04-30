@@ -26,15 +26,15 @@ notAlternative = true
   weight = 1
 
 [[menu.main]]
-  name = "Terapi"
-  identifier = "terapi"
-  url = "/terapi/"
+  name = "Tjänster"
+  identifier = "tjanster"
+  url = "/tjanster/"
   weight = 2
 
 [[menu.main]]
-  name = "Om Kim"
-  identifier = "om-kim"
-  url = "/om-kim/"
+  name = "Hur går det till?"
+  identifier = "hur-gar-det-till"
+  url = "/hur-gar-det-till/"
   weight = 3
 
 [[menu.main]]

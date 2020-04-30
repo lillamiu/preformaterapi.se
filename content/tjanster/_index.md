@@ -1,8 +1,8 @@
 +++
-title = "Terapi"
-description = "Beskrivning av psykosyntes terapiformen."
-layout = "terapi"
-type = "terapi"
+title = "Tjänster"
+description = "Tjänster jag erbjuder. Samtalsterapi, avspänning & balans, och hörselhälsa. Terapi och coachning."
+layout = "tjanster"
+type = "tjanster"
 +++
 ## Hur går det till?
 ### Första mötet 
