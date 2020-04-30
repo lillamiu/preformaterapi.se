@@ -4,21 +4,18 @@ description = "Tjänster jag erbjuder. Samtalsterapi, avspänning & balans, och 
 layout = "tjanster"
 type = "tjanster"
 +++
-## Hur går det till?
-### Första mötet 
-Vi träffas en första gång och bestämmer sedan om vi anser att det finns bra förutsättningar och en ömsesidig vilja att fortsätta arbeta tillsammans. Här beslutar vi också om det är **kortare coachning** mot ett speciellt mål eller mer **djupgående terapi** som vi ska arbeta med.
+## Samtalsterapi
+Jag har en femåring utbildning i Psykosyntes till **Diplomerad Psykosyntesterapeut** och har sedan 2011 tagit emot klienter i samtalsterapi.
 
-### Så fortsätter vi 
-Därefter träffas vi regelbundet och så ofta vi kommer överens om. Vanligtvis träffar jag mina klienter i terapi 1 gång per vecka, alternativt 1 gång var 14 dag men andra intervall förekommer också. Oavsett **coachning** eller **terapi** så behöver resultaten av våra möten bearbetas och en del behöver längre och andra kortare tid för detta.
+Att arbeta som terapeut är fantastiskt — jag får förmånen att följa en medmänniskas resa mot läkning och ökad självinsikt.
 
-Mitt mål med **samtalsterapi** är att det som ligger fördolt och som Du behöver arbeta med kommer upp i ljuset för att Du ska kunna komma vidare i livet och må bättre i Dig själv. Det finns inga genvägar, terapiarbete tar sin tid och för mig är det viktigt att vi arbetar i en takt som känns respektfullt och bra för Dig.
+Jag är medlem och arbetar i enlighet med [Psykosyntesföreningens etiska regler](https://psykosyntesforeningen.se/kvalitet/etiska-regler-for-psykosyntesforeningen/), under tystnadsplikt, handledning och kontinuerlig fortbildning samt är ansvarsförsäkrad. [Psykosyntesföreningen](https://psykosyntesforeningen.se/) har även en etisk nämnd som fungerar som en kvalitetsstämpel och trygghet för den som är klient hos någon av Psykosyntesföreningens diplomerade psykosyntesterapeuter.
 
-Psykosyntes är en terapiform grundad av Roberto Assagioli, som från början var en av Sigmund Freuds elever. Framförallt ville han förstå de mänskliga uttrycken, såsom viljan, kärlek, kreativitet, skönhet och andlighet. Assagioli utgick ifrån det som var friskt inom varje människa istället för att fokusera på det ”sjuka”. Tillsammans med andra humanistiska psykologer utvecklade han sedan Psykosyntesen. Psykosyntesen började sprida sig alltmer under 1950-60 talen och i London finns idag The Institute of Psychosynthesis, där det ges en masterutbildning i Psykosyntes samt bedrivs aktiv forskning.
+[Psykosyntesinstitutet](https://psykosyntesinstitutet.se/), där jag utbildat mig, är kvalitetssäkrat enlig EFFP som är en europeisk organisation, vars arbete syftar till att verka för att psykosyntesterapi från kvalitativa utbildningsinstitut ges psykoterapeut legitimation på Europanivå genom godkännande av EAP, European Association of Psychotherapy.
 
-## Vad är psykosyntes?
-På [Psykosyntesförbundets hemsida](http://psykosyntesforeningen.se/components/com_wordpress/wp/wp-content/uploads/Broschyr_klienter_2017-04-05.pdf "Psykosyntesförbundets hemsida") kan du läsa mer om psykosyntesens historia och grundsatser.
+## Avspänning & Balans
+I mitten av 90-talet började jag intressera mig för Mental träning där Mindfulness ingick som en del. Totalt läste och praktiserade jag 3,5 år för Lars-Eric Uneståhl och Elisabeth Sohlin vid Skandinaviska Ledarhögskolan och blev till slut **Diplomerad Avpänningspedagog**.
+Vi arbetar olika övningar och verktyg för att nå en ökad mental och muskulär avspänning.
 
-
-Här sammanfattas det som gör att jag uppskattar och har valt psykosyntesen som terapiform:
-
-> Inom varje människa finns en grundläggande drivkraft mot helande, mognad och växt. Vi är större än våra sår och begränsningar. [...] Huvudvikten ligger vid att stärka det friska hos individen och på tilliten till individens egen kraft. Vilja och eget ansvar är viktiga begrepp. [...] En av de grundläggande metoderna i psykosyntes är utvecklandet av medveten närvaro, det som nu populärt kallas ”Mindfulness”.
+## Hörselhälsa
+Jag har också en specialkompetens som **Medicine doktor i Audiologi**. Ett område som jag arbetat inom under 43 år. Symptom som tinnitus och ljudkänslighet har många gånger en nära relation till stress, sömn och muskulära spänningar. Därför är avspänningsträning en god väg mot lindrad besvärsgrad.

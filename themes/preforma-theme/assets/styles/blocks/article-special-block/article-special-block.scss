@@ -35,3 +35,21 @@
     }
   }
 }
+
+#announcement-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#announcement-content p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 8px;
+}
+#announcement-content strong {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}

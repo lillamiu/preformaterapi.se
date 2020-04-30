@@ -1,8 +1,8 @@
 +++
 sectionTitle = "Priser"
 +++
-### Standard
-700 kr / tim
+### Ordinarie
+750 kr / tim (inkl moms)
 
-### Studenter och pensionärer
-560 kr / tim
+### Arbetslös, studerande, långtidssjukskriven eller pensionär
+560 kr / tim (inkl moms)
