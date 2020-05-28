@@ -1,6 +1,10 @@
 {{ $textBlockCSS := resources.Get "styles/blocks/article-text-block/article-text-block.scss" | toCSS | minify | fingerprint }}
 {{ $mediaBlockCSS := resources.Get "styles/blocks/article-media-block/article-media-block.scss" | toCSS | minify | fingerprint }}
 {{ $specialBlockCSS := resources.Get "styles/blocks/article-special-block/article-special-block.scss" | toCSS | minify | fingerprint }}
+{{ $servicesBlockCSS := resources.Get "styles/blocks/services-block/services-block.scss" | toCSS | minify | fingerprint }}
+{{ $heroBlockCSS := resources.Get "styles/blocks/hero-block/hero-block.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" type='text/css' href="{{ $textBlockCSS.Permalink }}"/>
 <link rel="stylesheet" type='text/css' href="{{ $mediaBlockCSS.Permalink }}"/>
 <link rel="stylesheet" type='text/css' href="{{ $specialBlockCSS.Permalink }}"/>
+<link rel="stylesheet" type='text/css' href="{{ $servicesBlockCSS.Permalink }}"/>
+<link rel="stylesheet" type='text/css' href="{{ $heroBlockCSS.Permalink }}"/>

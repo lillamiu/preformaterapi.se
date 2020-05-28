@@ -28,7 +28,8 @@ $color--background-4: $color--yellow;
 
   .bg-logo {
     //fill: $color--blue;
-    background-color: $color--blue;
+    filter: saturate($color--blue);
+    //color: $color--blue;
   }
 }
 
@@ -37,7 +38,8 @@ $color--background-4: $color--yellow;
 
   .bg-logo {
     //fill: $color--peach;
-    background-color: $color--peach;
+    filter: saturate($color--peach);
+    //color: $color--peach;
   }
 }
 
@@ -46,7 +48,8 @@ $color--background-4: $color--yellow;
 
   .bg-logo {
     //fill: $color--green;
-    background-color: $color--green;
+    filter: saturate($color--green);
+    //color: $color--green;
   }
 }
 
@@ -55,6 +58,7 @@ $color--background-4: $color--yellow;
 
   .bg-logo {
     //fill: $color--yellow;
-    background-color: $color--yellow;
+    filter: saturate($color--yellow);
+    //color: $color--yellow;
   }
 }

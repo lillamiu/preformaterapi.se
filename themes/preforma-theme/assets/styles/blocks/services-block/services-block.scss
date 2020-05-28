@@ -1,0 +1,69 @@
+@import '../../_global-styles/mixins';
+
+.services-block {
+  display: inline-grid;
+  width: 100%;
+  max-width: 108.0rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  @include phone {
+    margin: 0 1.6rem 2.4rem 1.6rem;
+    grid-gap: 3.2rem;
+    .img-wrapper {
+      width: 16rem;
+      align-self: center;
+    }
+  }
+
+  @include tablet {
+    margin: 0 2.4rem 3.2rem 2.4rem;
+    max-width: 76.8rem;
+    grid-gap: 3.2rem;
+    .img-wrapper {
+      width: auto;
+    }
+  }
+
+  @include desktop {
+    margin: 0 3.2rem 4.8rem 3.2rem;
+    max-width: 108.0rem;
+    grid-gap: 4.8rem;
+    .img-wrapper {
+      width: auto;
+    }
+  }
+
+  &__item {
+    .img-wrapper {
+      margin-bottom: 2.4rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {
+    height: auto;
+  }
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+}

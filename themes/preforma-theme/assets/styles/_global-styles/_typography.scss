@@ -20,8 +20,16 @@ h1 { /*Welcome header*/
   font-weight: 700;
   font-size: 4.0rem;
   line-height: 1.6;
-  padding-bottom: 1.6rem;
   color: $color--teal;
+  @include phone {
+    font-size: 2.4rem;
+  }
+  @include tablet {
+    font-size: 3.2rem;
+  }
+  @include desktop {
+    font-size: 4.0rem;
+  }
 }
 
 h2 { /*section header*/
@@ -66,7 +74,7 @@ h4 { /*section sub heading label*/
   font-family: 'Laila', serif;
   font-weight: 500;
   font-size: 1.8rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 0.8rem;
   color: $color--purple;
 
   @include phone {

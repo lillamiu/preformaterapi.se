@@ -1,6 +1,6 @@
 {{ define "main" }}
   <main class="content-background background-1">
-    {{ partial "components/bg-logo.html" . }}
+    {{ partial "blocks/hero-block.html" . }}
     <section class="article-special-block">
       <div class="article-special-block__content">
         <h4 id="announcement-heading">
@@ -11,14 +11,7 @@
         </div>
       </div>
     </section>
-    <section class="article-media-block">
-      <img class='profile-image media-border' src='../images/kim.jpg' alt='Porträtt av Kim' style="filter: saturate(70%);">
-    </section>
-    <section class="article-text-block">
-      <h1 style="text-align: center;">Välkommen!</h1>
-      {{ .Content }}
-    </section>
-
+    {{ partial "blocks/services-block.html" . }}
     {{ partial "components/top-button.html" . }}
   </main>
 {{ end }}
