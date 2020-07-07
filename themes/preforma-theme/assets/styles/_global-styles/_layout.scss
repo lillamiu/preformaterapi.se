@@ -29,6 +29,28 @@ body {
   top: 0
 }
 
+.space-items-v {
+	&--24 {
+		> * {
+        	margin-bottom: 2.4rem;
+      	}
+      	> *:last-child {
+        	margin-bottom: 0;
+      	}
+	}
+}
+
+.space-items-h {
+	&--48 {
+		> * {
+        	margin-right: 4.8rem;
+      	}
+      	> *:last-child {
+        	margin-right: 0;
+      	}
+	}
+}
+
 // making section headers sticky. needs more work
 // section > header {
 //   position: sticky;
