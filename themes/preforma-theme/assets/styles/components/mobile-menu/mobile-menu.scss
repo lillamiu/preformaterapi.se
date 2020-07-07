@@ -174,8 +174,9 @@
     position: relative;
     font-size: 24px;
     padding: 15px 0;
-    font-weight: 300;
-    color: white;
+    font-weight: 700;
+    //color: white;
+    color: $color--purple;
     text-decoration: none;
     @include easeOut;
 
