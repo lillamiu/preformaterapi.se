@@ -1,4 +1,4 @@
-baseURL = "https://preforma.netlify.com/"
+baseURL = "https://preforma.se/"
 languageCode = "sv"
 title = "Preforma Samtalsterapi"
 theme = "preforma-theme"
