@@ -1,7 +1,8 @@
 +++
 layout = "home"
 type = "home"
-description = "Start page of Preforma Avspänning & Balans"
+title = "Preforma Avspänning & Balans, samtalsterapi och coachning i Göteborg."
+description = "Jag, Kim Kähäri Diplomerad Psykosyntesterapeut, erbjuder samtalsterapi och coachning, avspänning & balans, och hörselhälsa. Kontakta mig om du upplever hörselbesvär, eller har behov av hörselskydd eller hörhjälpmedel på arbetet."
 announcementText = """
 **COVID-19 uppdatering:** Erbjuder kontakt / terapi / coachning via Zoom eller Skype. Tider finns främst under måndag förmiddagar samt sen fredag eftermiddag.
 

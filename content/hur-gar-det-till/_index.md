@@ -1,6 +1,6 @@
 +++
-title = "Hur går det till?"
-description = "Information om mig, Kim, Samtalsterapeut."
+title = "Hur coachning och terapi går till hos Kim, Samtalsterapeut Göteborg."
+description = "Hur det går till att gå på terapi, coachning, eller hörselhjälp hos Kim, Samtalsterapeut i Göteborg."
 type = "hur-gar-det-till"
 layout = "hur-gar-det-till"
 +++

@@ -1,6 +1,6 @@
 +++
-title = "Tjänster"
-description = "Tjänster jag erbjuder. Samtalsterapi, avspänning & balans, och hörselhälsa. Terapi och coachning."
+title = "Preforma Avspänning & Balans tjänster inom samtalsterapi, coachning, och hörselhälsa i Göteborg."
+description = "Tjänster Kim Kähäri, Diplomerad Psykosyntesterapeut, erbjuder: Samtalsterapi, avspänning & balans, och hörselhälsa. Terapi och coachning."
 layout = "tjanster"
 type = "tjanster"
 +++
