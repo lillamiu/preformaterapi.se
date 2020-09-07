@@ -11,23 +11,12 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "home" # Used in routes, e.g., /admin/collections/blog
-    label: "Home" # Used in the UI
-    folder: "content/home" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "_index" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-      - {label: "Type", name: "type", widget: "hidden", default: "home"}
-      - {label: "Title (SEO)", name: "title", widget: "hidden", default: "Preforma Samtalsterapi"}
-      - {label: "Description (SEO)", name: "description", widget: "string"}
-      - {label: "Welcome Text", name: "welcomeText", widget: "markdown"}
-      - {label: "Announcement Text", name: "announcementText", widget: "markdown"}
-      - {label: "Announcement Date", name: "announcementDate", widget: "date"}
-  - name: "reflections"
-    label: "Reflections"
-    folder: "content/home/reflections"
-    create: true
-    fields:
-      - {label: "Person (Kön, ålder)", name: "person", widget: "string"}
-      - {label: "Reflektion", name: "quote", widget: "string"}
+    - label: "Pages"
+      name: "pages"
+      files:
+        - label: "Home Page"
+          name: "home"
+          file: "site/content/_index.md"
+          fields:
+            - {label: Announcement, name: announcementText, widget: markdown}
+            - {label: "Announcement Date", name: "announcementDate", widget: "date"}
