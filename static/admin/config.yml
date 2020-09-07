@@ -13,6 +13,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
     - label: "Pages"
       name: "pages"
+      format: "toml-frontmatter"
       files:
         - label: "Home Page"
           name: "home"
