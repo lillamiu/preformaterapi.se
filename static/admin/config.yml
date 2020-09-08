@@ -20,5 +20,5 @@ collections:
           name: "home"
           file: "content/_index.md"
           fields:
-            - {label: Announcement, name: announcementText, widget: markdown}
+            - {label: "Announcement", name: "announcementText", widget: "markdown", pattern: ['^.{10,300}$', "Får vara max 300 tecken"]}
             - {label: "Announcement Date", name: "announcementDate", widget: "date"}
