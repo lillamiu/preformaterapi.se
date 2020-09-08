@@ -12,17 +12,31 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
-  	CMS.registerPreviewStyle("/css/_global-styles/main.css");
-  	CMS.registerPreviewStyle("/css/components/bg-logo/bg-logo.css");
-  	CMS.registerPreviewStyle("/css/components/header/header.css");
-  	CMS.registerPreviewStyle("/css/components/footer/footer.css");
-  	CMS.registerPreviewStyle("/css/components/mobile-menu/mobile-menu.css");
-  	CMS.registerPreviewStyle("/css/components/top-button/top-button.css");
-  	CMS.registerPreviewStyle("/css/components/content-background/content-background.css");
-  	CMS.registerPreviewStyle("/css/blocks/article-special-block/article-special-block.css");
-  	CMS.registerPreviewStyle("/css/blocks/article-text-block/article-text-block.css");
-  	CMS.registerPreviewStyle("/css/blocks/contact-form-block/contact-form-block.css");
-  	CMS.registerPreviewStyle("/css/blocks/article-media-block/article-media-block.css");
+    {{ $mainCSS := resources.Get "styles/_global-styles/main.scss" | toCSS | minify | fingerprint }}
+    {{ $bgLogoCSS := resources.Get "styles/components/bg-logo/bg-logo.scss" | toCSS | minify | fingerprint }}
+    {{ $headerCSS := resources.Get "styles/components/header/header.scss" | toCSS | minify | fingerprint }}
+    {{ $footerCSS := resources.Get "styles/components/footer/footer.scss" | toCSS | minify | fingerprint }}
+    {{ $mobileMenuCSS := resources.Get "styles/components/mobile-menu/mobile-menu.scss" | toCSS | minify | fingerprint }}
+    {{ $topButtonCSS := resources.Get "styles/components/top-button/top-button.scss" | toCSS | minify | fingerprint }}
+    {{ $contentBackgroundCSS := resources.Get "styles/components/content-background/content-background.scss" | toCSS | minify | fingerprint }}
+    {{ $textBlockCSS := resources.Get "styles/blocks/article-text-block/article-text-block.scss" | toCSS | minify | fingerprint }}
+    {{ $mediaBlockCSS := resources.Get "styles/blocks/article-media-block/article-media-block.scss" | toCSS | minify | fingerprint }}
+    {{ $specialBlockCSS := resources.Get "styles/blocks/article-special-block/article-special-block.scss" | toCSS | minify | fingerprint }}
+    {{ $servicesBlockCSS := resources.Get "styles/blocks/services-block/services-block.scss" | toCSS | minify | fingerprint }}
+    {{ $heroBlockCSS := resources.Get "styles/blocks/hero-block/hero-block.scss" | toCSS | minify | fingerprint }}
+
+  	CMS.registerPreviewStyle({{ $mainCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $bgLogoCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $headerCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $footerCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $mobileMenuCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $topButtonCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $contentBackgroundCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $textBlockCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $mediaBlockCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $specialBlockCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $servicesBlockCSS.Permalink }});
+  	CMS.registerPreviewStyle({{ $heroBlockCSS.Permalink }});
   	CMS.registerPreviewStyle("https://fonts.googleapis.com/css?family=Laila:300,500");
 
 
@@ -32,57 +46,17 @@
 		  	var date = entry.getIn(['data','announcementDate']);
 
 		    return h('main', {"className": "content-background background-1"},
-		    	h('div', {"className": "bg-logo"}),
-		    	h('section', {"className": "article-text-block"},
-		      	h('h1', {"style": {"textAlign":"center"}}, "Välkommen"),
-		      	h('p', {}, entry.getIn(['data','welcomeText']))
-		    	),
-		    	h('div',{"className": "article-media-block"}, entry.getIn(['data','media'])),
 		    	h('section', {"className": "article-special-block"},
-		    		h('header', {},
-		    			h('h2', {}, "Aktuellt")
-		    		),
 		    		h('div', {"className" : "article-special-block__content"},
-		    			h('h4', {}, date.toLocaleDateString('sv-SE', {day: 'numeric', month: 'long', year: 'numeric'})),
-		    			h('p', {}, entry.getIn(['data','announcementText']))
+		    			h('h4', {"id" : "announcement-heading"}, date.toLocaleDateString('sv-SE', {year: 'numeric', month: 'numeric', day: 'numeric'})),
+		    			h('div', {"id" : "announcement-content"}, entry.getIn(['data','announcementText']))
 		    		)
 		    	)
 		    );
 		  }
 		});
 
-		//TODO need to fix the code here
-		var ReflectionsControl = createClass({
-		  handleChange: function(e) {
-		    this.props.onChange(e.target.value.split(',').map((e) => e.trim()));
-		  },
-
-		  render: function() {
-		    var value = this.props.value;
-		    return h('input', { type: 'text', value: value ? value.join(', ') : '', onChange: this.handleChange });
-		  }
-		});
-		var ReflectionsPreview = createClass({
-		  render: function() {
-		  	var entry = this.props.entry;
-
-		    return h('main', {"className": "content-background background-1"},
-		    	h('div', {"className": "bg-logo"}),
-		    	h('section', {"className": "article-text-block"},
-		    		h('header', {},
-		    			h('h2', {}, "Reflektioner")
-		    		),
-		    		h('div', {},
-		    			h('h3', {}, entry.getIn(['data','person'])),
-		    			h('p', {}, entry.getIn(['data','quote']))
-		    		)
-		    	)
-		    );
-		  }
-		});
 		CMS.registerPreviewTemplate("home", HomePreview);
-		CMS.registerPreviewTemplate("reflections", ReflectionsPreview);
-
 	</script>
 </body>
 </html>
