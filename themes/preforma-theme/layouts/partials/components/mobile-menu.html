@@ -3,8 +3,11 @@
   <a class="logo" href="/">
     <img src="/vectors/logo.svg" alt="Preforma Terapi logo" width="48px">
   </a>
-  <div class="menu__item active">{{ .Name }}</div>
-
+  {{ range .Site.Menus.main }}
+    {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+    <div class="menu__item active">{{ .Name }}</div>
+    {{end}}
+  {{ end }}
   <button class="burger" aria-haspopup="true" aria-controls="mobileMenu">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
