@@ -1,7 +1,7 @@
 <head>
   {{ partial "base/meta.html" . }}
   <title>{{ .Site.Title }}</title>
-  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+  
   {{ $mainCSS := resources.Get "styles/_global-styles/main.scss" | toCSS | minify | fingerprint }}
   {{ $bgLogoCSS := resources.Get "styles/components/bg-logo/bg-logo.scss" | toCSS | minify | fingerprint }}
   {{ $headerCSS := resources.Get "styles/components/header/header.scss" | toCSS | minify | fingerprint }}
