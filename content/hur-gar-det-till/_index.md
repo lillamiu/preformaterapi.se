@@ -16,6 +16,4 @@ Mitt mål med **samtalsterapi** är att det som ligger fördolt och som Du behö
 Psykosyntes är en terapiform grundad av Roberto Assagioli, som från början var en av Sigmund Freuds elever. Framförallt ville han förstå de mänskliga uttrycken, såsom viljan, kärlek, kreativitet, skönhet och andlighet. Assagioli utgick ifrån det som var friskt inom varje människa istället för att fokusera på det ”sjuka”. Tillsammans med andra humanistiska psykologer utvecklade han sedan Psykosyntesen. Psykosyntesen började sprida sig alltmer under 1950-60 talen och i London finns idag The Institute of Psychosynthesis, där det ges en masterutbildning i Psykosyntes samt bedrivs aktiv forskning.
 
 ## Samverkan
-Jag samverkar med [Artist & Musikerhälsan](https://artist-musikerhalsan.se/sv/). I mitt övriga nätverk finns personer som arbetar inom: fysioterapi, massage, hörselutredning, hörselskydd, medicinsk yoga, somatics, och naturvandringar.
-
-Jag är **återförsäljare för [Bellman & Symfon](https://bellman.com/sv/bellmanear/)** och deras produkter av hörselskydd och hörhjälpmedel.
+Jag samverkar med [Artist & Musikerhälsan](https://artist-musikerhalsan.se/sv/), och är även **återförsäljare för [Bellman & Symfon](https://bellman.com/sv/bellmanear/)** och deras produkter av hörselskydd och hörhjälpmedel.
