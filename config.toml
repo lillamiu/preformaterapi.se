@@ -38,7 +38,7 @@ notAlternative = true
   weight = 3
 
 [[menu.main]]
-  name = "Boka"
+  name = "Kontakt"
   identifier = "boka"
   url = "/boka/"
   weight = 4
