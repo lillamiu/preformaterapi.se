@@ -4,12 +4,15 @@
 	<meta name="generator" content="Hugo 0.120.4">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sidan nerlagd</title>
+	<title>{{ print .Page.Title }}</title>
 	<link href="https://fonts.googleapis.com/css?family=Laila:300,500,600" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
 
-	{{ $mainCSS := resources.Get "style.scss" | toCSS | minify | fingerprint }}
-	<link rel="stylesheet" type='text/css' href="{{ $mainCSS.Permalink }}"/>
+
+	{{ $options := dict "transpiler" "dartsass" "targetPath" "css/style.css" }} 
+	{{ with resources.Get "style.scss" | toCSS $options | minify | fingerprint }} 
+	<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+	{{ end }}
 </head>
 
 <body>
