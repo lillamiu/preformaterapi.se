@@ -1,6 +1,0 @@
-{{ $specialBlockCSS := resources.Get "styles/blocks/article-special-block/article-special-block.scss" | toCSS | minify | fingerprint }}
-{{ $textBlockCSS := resources.Get "styles/blocks/article-text-block/article-text-block.scss" | toCSS | minify | fingerprint }}
-{{ $formBlockCSS := resources.Get "styles/blocks/contact-form-block/contact-form-block.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" type='text/css' href="{{ $specialBlockCSS.Permalink }}"/>
-<link rel="stylesheet" type='text/css' href="{{ $textBlockCSS.Permalink }}"/>
-<link rel="stylesheet" type='text/css' href="{{ $formBlockCSS.Permalink }}"/>

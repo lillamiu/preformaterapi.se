@@ -1,4 +1,0 @@
-{{ $textBlockCSS := resources.Get "styles/blocks/article-text-block/article-text-block.scss" | toCSS | minify | fingerprint }}
-{{ $specialBlockCSS := resources.Get "styles/blocks/article-special-block/article-special-block.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" type='text/css' href="{{ $textBlockCSS.Permalink }}"/>
-<link rel="stylesheet" type='text/css' href="{{ $specialBlockCSS.Permalink }}"/>
